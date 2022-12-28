@@ -4,12 +4,31 @@
 body{
     font-family: 'Press Start 2P', cursive;
     background-color: #5e2129;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 h1{
-    text-align: center;
     font-size: 4em;
     color: #fff;
+}
+
+.contenedor__buscar{
+    height: 5em;
+}
+
+.contenedor__buscar > input{
+    height: 50%;
+}
+
+.contenedor__buscar > input::placeholder{
+    text-align: center;
+}
+
+.contenedor__buscar > button{
+    height: 50%;
 }
 
 .contenedor_cards{
