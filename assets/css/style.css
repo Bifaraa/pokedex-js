@@ -11,16 +11,20 @@ body{
 }
 
 h1{
-    font-size: 4em;
+    font-size: 2em;
     color: #fff;
+    text-align: center;
 }
 
 .contenedor__buscar{
     height: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contenedor__buscar > input{
-    height: 50%;
+    height: 50%;    
 }
 
 .contenedor__buscar > input::placeholder{
@@ -29,6 +33,7 @@ h1{
 
 .contenedor__buscar > button{
     height: 50%;
+    margin-top: 1em;
 }
 
 .contenedor_cards{
@@ -83,6 +88,11 @@ footer{
 }
 
 @media (min-width: 1000px){
+
+    h1{
+        font-size: 4em;
+    }
+
     .card{
         transition: all 1s ease;
     }
