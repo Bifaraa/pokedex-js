@@ -8,7 +8,7 @@ body{
 
 h1{
     text-align: center;
-    font-size: 2em;
+    font-size: 4em;
     color: #fff;
 }
 
@@ -55,6 +55,12 @@ hr{
     heigth: 5px;
     border-radius: 15px;
     text-align: center;
+}
+
+footer{
+    text-align: center;
+    margin: 1em;
+    color: #fff;
 }
 
 @media (min-width: 1000px){
