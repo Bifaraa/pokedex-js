@@ -1,3 +1,10 @@
+window.onload = () => {
+    const loader = document.querySelector('.loader');
+    loader.parentNode.removeChild(loader);
+    const body = document.querySelector('.hidden');
+    body.classList.remove('hidden');
+}
+
 document.addEventListener('DOMContentLoaded', async () => {
    
   
@@ -82,14 +89,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         card.innerHTML = pokemonInnnerHtml;
         contenedor.appendChild(card);
     }
-
+   
     traerPokemones();
-    window.onload = () => {
-        const loader = document.querySelector('.loader');
-        loader.parentNode.removeChild(loader);
-        const body = document.querySelector('.hidden');
-        body.classList.remove('hidden');
-    }
+   
 });
 
 function main(){
