@@ -1,7 +1,10 @@
 document.addEventListener('DOMContentLoaded', async () => {
+   
+  
+
     const contenedor = document.querySelector('.contenedor_cards');
     // la cantidad de pokemones que va a traer de la api
-    const CANTIDAD_DE_POKEMONES = 150;
+    const CANTIDAD_DE_POKEMONES = 1000;
     const coloresTipo = {
         fire: '#FDDFDF',
         grass: '#DEFDE0',
@@ -81,5 +84,14 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     traerPokemones();
+    window.onload = () => {
+        const loader = document.querySelector('.loader');
+        loader.parentNode.removeChild(loader);
+        const body = document.querySelector('.hidden');
+        body.classList.remove('hidden');
+    }
 });
 
+function main(){
+    
+}

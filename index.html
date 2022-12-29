@@ -1,28 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pokedex</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="website icon" type="png" href="./assets/img/clipart1247442.png">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="website icon"
+      type="png"
+      href="./assets/img/clipart1247442.png"
+    />
     <script src="./assets/js/index.js"></script>
-</head>
-<body>
+  </head>
+  <body class="hidden">
+    <div class="loader">
+      <div class="wrapper">
+        <div class="pokeball"></div>
+      </div>
+      <span class="cargando">Cargando ...</span>
+    </div>
     <header>
-        <h1>Pokedex</h1>
-        <div class="contenedor__buscar">
-            <input type="text" placeholder="Buscar pokemon">
-            <button>buscar</button>
-        </div>
+      <h1>Pokedex</h1>
+      <div class="contenedor__buscar">
+        <input type="text" placeholder="Buscar pokemon" />
+        <button>buscar</button>
+      </div>
     </header>
     <main>
-        <div class="contenedor_cards">
-        </div>
+      <div class="contenedor_cards"></div>
     </main>
     <footer>
-        <span class="nombre">Autor: Jhon Eduard Sierra Zuluaga</span>
+      <span class="nombre">Autor: Jhon Eduard Sierra Zuluaga</span>
     </footer>
-</body>
+  </body>
 </html>
